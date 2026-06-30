@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lunarmagic.com/sitemap.xml
