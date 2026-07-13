@@ -34,3 +34,7 @@ All CSS/image/internal links use relative paths so the site works locally, on Gi
 
 ## Services release note
 The Services page is a single complete page in this release. Individual service detail pages are intentionally deferred.
+
+
+## Locations R1
+Redesigned the Locations page for Eastern U.S. coverage plus ten major western markets and added corresponding western city pages.
