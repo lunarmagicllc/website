@@ -31,3 +31,6 @@ git push origin main
 ## Notes
 
 All CSS/image/internal links use relative paths so the site works locally, on GitHub Pages under `/website/`, and when later deployed to `lunarmagic.com`.
+
+## Services release note
+The Services page is a single complete page in this release. Individual service detail pages are intentionally deferred.
