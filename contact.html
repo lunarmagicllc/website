@@ -88,9 +88,11 @@
         </aside>
 
         <div class="form-card">
-          <form id="inquiry-form" action="https://formspree.io/f/mgogedwr" method="POST">
-            <input type="hidden" name="_subject" value="New Lunar Magic Drone Show Inquiry">
-            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <form id="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ce173113-b779-45b5-94f7-fef563341bca">
+            <input type="hidden" name="subject" value="New Lunar Magic Drone Show Inquiry">
+            <input type="hidden" name="from_name" value="Lunar Magic Website">
+            <input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
             <div class="form-grid">
               <div class="field">
@@ -183,14 +185,15 @@
           headers: { 'Accept': 'application/json' }
         });
 
-        if (response.ok) {
+        const data = await response.json().catch(() => ({}));
+
+        if (response.ok && data.success) {
           form.reset();
           status.className = 'form-status success';
           status.textContent = 'Thank you. Your request has been sent to Lunar Magic.';
         } else {
-          const data = await response.json().catch(() => ({}));
           status.className = 'form-status error';
-          status.textContent = data.errors?.map(error => error.message).join(' ') || 'We could not send your request. Please email info@lunarmagic.com or call +1 540.300.5288.';
+          status.textContent = data.message || 'We could not send your request. Please email info@lunarmagic.com or call +1 540.300.5288.';
         }
       } catch (error) {
         status.className = 'form-status error';

@@ -38,3 +38,11 @@ The Services page is a single complete page in this release. Individual service 
 
 ## Locations R1
 Redesigned the Locations page for Eastern U.S. coverage plus ten major western markets and added corresponding western city pages.
+
+
+## Contact form
+The contact form uses Web3Forms and is configured with the Lunar Magic access key. Test locally at http://localhost:8000/contact.html.
+
+
+## Locations Highlights R1
+Added locally relevant landmark and cultural highlights to all 48 city pages.

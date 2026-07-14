@@ -4,13 +4,10 @@
 <title>Drone Light Show Gallery | Lunar Magic</title>
 <meta name="description" content="Explore Lunar Magic drone light show formations, patriotic displays, branded designs, sports scenes, and behind-the-scenes preparation.">
 <link rel="canonical" href="https://lunarmagic.com/gallery.html">
+<link rel="stylesheet" href="./styles.css">
 <style>
 :root{--bg:#120421;--panel:#0a0710;--text:#f7f2e8;--muted:#d6ccdc;--line:rgba(255,255,255,.18);--accent:#d8c7ff;--shadow:0 18px 50px rgba(0,0,0,.35)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#170528 0%,#0b0710 55%,#120421 100%);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit}
-header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(10,5,18,.84);border-bottom:1px solid var(--line)}
-.nav{max-width:1180px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:Georgia,serif;letter-spacing:.08em}.brand img{width:42px;height:42px;object-fit:contain}
-nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:.95rem}nav a:hover,nav a[aria-current=page]{color:#fff}
 main{max-width:1180px;margin:auto;padding:54px 22px 80px}.hero{text-align:center;max-width:850px;margin:0 auto 42px}.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-size:.82rem}
 h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(2.3rem,6vw,4.8rem);line-height:1.05;margin:12px 0 18px}.hero p{font-size:clamp(1rem,2vw,1.25rem);color:var(--muted);margin:0 auto;max-width:760px}
 .stats{margin:34px auto 58px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--line);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.035);box-shadow:var(--shadow)}
@@ -25,10 +22,17 @@ footer{text-align:center;color:var(--muted);padding:30px 18px 48px}
 dialog{width:min(94vw,1200px);max-height:92vh;padding:0;border:1px solid rgba(255,255,255,.25);border-radius:18px;background:#050507;color:white;box-shadow:0 30px 100px rgba(0,0,0,.7)}dialog::backdrop{background:rgba(0,0,0,.86)}
 .lightbox-wrap{position:relative;display:grid;place-items:center;min-height:70vh}.lightbox-wrap img{max-width:100%;max-height:84vh;object-fit:contain}
 .close,.prev,.next{position:absolute;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.62);color:white;width:46px;height:46px;border-radius:50%;font-size:1.35rem;cursor:pointer}.close{top:14px;right:14px}.prev{left:14px;top:50%;transform:translateY(-50%)}.next{right:14px;top:50%;transform:translateY(-50%)}.lightbox-caption{padding:12px 18px 18px;text-align:center;color:var(--muted)}
-@media(max-width:800px){.nav{align-items:flex-start;flex-direction:column}.stats{grid-template-columns:1fr 1fr}.stat{border-bottom:1px solid var(--line)}.stat:nth-child(2n){border-right:none}.stat:last-child{grid-column:1/-1;border-bottom:none}.card.large,.card.medium,.card.third{grid-column:span 12}.section-head{align-items:flex-start;flex-direction:column}main{padding-top:36px}}
+@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.stat{border-bottom:1px solid var(--line)}.stat:nth-child(2n){border-right:none}.stat:last-child{grid-column:1/-1;border-bottom:none}.card.large,.card.medium,.card.third{grid-column:span 12}.section-head{align-items:flex-start;flex-direction:column}main{padding-top:36px}}
 </style></head><body>
-<header><div class="nav"><a class="brand" href="./index.html"><img src="./assets/lunar-magic-logo-transparent.png" alt="Lunar Magic logo"><span>LUNAR MAGIC</span></a>
-<nav><a href="./index.html">Home</a><a href="./services/">Services</a><a href="./gallery.html" aria-current="page">Gallery</a><a href="./locations/">Locations</a><a href="./contact.html">Contact</a></nav></div></header>
+<header class="site-header" aria-label="Primary navigation">
+  <a class="brand" href="index.html" aria-label="Lunar Magic home"><span>Lunar Magic</span></a>
+  <nav>
+    <a href="services/index.html">Services</a>
+    <a href="locations/index.html">Locations</a>
+    <a aria-current="page" href="gallery.html">Gallery</a>
+    <a class="nav-cta" href="contact.html">Request a Show</a>
+  </nav>
+</header>
 <main><section class="hero"><div class="eyebrow">Drone Light Show Portfolio</div><h1>A Sky Without Limits</h1><p>Every drone light show is custom designed for the client. From patriotic celebrations to branded artwork and outdoor adventures, every performance is uniquely choreographed to create unforgettable moments.</p></section>
 <div class="stats"><div class="stat"><strong>300+ drones</strong><span>Precision formations</span></div><div class="stat"><strong>Fully Custom</strong><span>Built for your event</span></div><div class="stat"><strong>FAA Compliant</strong><span>Safety-first planning</span></div><div class="stat"><strong>Reusable</strong><span>Low-waste entertainment</span></div><div class="stat"><strong>Eastern U.S.</strong><span>Regional event service</span></div></div>
 <section><div class="section-head"><div><div class="eyebrow">Featured Work</div><h2>Patriotic & Military</h2></div><p>Bold aerial imagery for national celebrations, municipal events, military tributes, and community gatherings.</p></div>
