@@ -46,3 +46,12 @@ The contact form uses Web3Forms and is configured with the Lunar Magic access ke
 
 ## Locations Highlights R1
 Added locally relevant landmark and cultural highlights to all 48 city pages.
+
+
+## Full SEO release
+- Custom domain canonical URLs use https://lunarmagic.com
+- Unique titles and descriptions for every city page
+- Open Graph and Twitter/X cards across the site
+- Organization, WebSite, Service, Breadcrumb, and Video structured data
+- Sitemap and robots.txt updated for the custom domain
+- Submit https://lunarmagic.com/sitemap.xml in Google Search Console after deployment
