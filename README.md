@@ -55,3 +55,8 @@ Added locally relevant landmark and cultural highlights to all 48 city pages.
 - Organization, WebSite, Service, Breadcrumb, and Video structured data
 - Sitemap and robots.txt updated for the custom domain
 - Submit https://lunarmagic.com/sitemap.xml in Google Search Console after deployment
+
+
+## Permanent site requirements
+- The sitewide social media bar (YouTube, Facebook, Instagram, LinkedIn) must remain on every public HTML page. Do not remove it in future rebuilds.
+- Locations architecture is USA -> State -> City/major market. All 50 state pages under `/locations/<state>/` are part of the SEO/internal-link structure and must be preserved.
