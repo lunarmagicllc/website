@@ -1,0 +1,16 @@
+yaml
+name: Submit Sitemap to IndexNow
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+
+jobs:
+  submit-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit sitemap URLs to IndexNow
+        uses: bojieyang/indexnow-action@v3
+        with:
+          sitemap-location: 'https://lunarmagic.com/sitemap.xml'
+          key: ${{ secrets.INDEXNOW_KEY }}
