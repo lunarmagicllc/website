@@ -1,5 +1,5 @@
-yaml
 name: Submit Sitemap to IndexNow
+
 on:
   workflow_run:
     workflows: ["pages-build-deployment"]
