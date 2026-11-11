@@ -60,3 +60,11 @@ Added locally relevant landmark and cultural highlights to all 48 city pages.
 ## Permanent site requirements
 - The sitewide social media bar (YouTube, Facebook, Instagram, LinkedIn) must remain on every public HTML page. Do not remove it in future rebuilds.
 - Locations architecture is USA -> State -> City/major market. All 50 state pages under `/locations/<state>/` are part of the SEO/internal-link structure and must be preserved.
+
+## SEO R5
+
+- Consolidated sitewide structured data to one consistent JSON-LD graph per public page.
+- Lunar Magic is consistently identified as Virginia-based with nationwide United States service coverage.
+- Preserves the existing IndexNow key file and GitHub Actions workflow under `.github/workflows/Indexnow.yml`.
+- `sitemap.xml` includes `lastmod` dates for this coordinated SEO/schema release.
+- Do not recreate a top-level `/workflows/` directory; GitHub Actions workflows belong under `/.github/workflows/`.
